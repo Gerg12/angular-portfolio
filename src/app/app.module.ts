@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroSliderComponent } from './hero-slider/hero-slider.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { HeroSliderComponent } from './hero-slider/hero-slider.component';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     AppRoutingModule
   ],
   providers: [],
