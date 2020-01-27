@@ -1,0 +1,33 @@
+//Start General Styles
+
+.gutter {
+  padding: 60px 30px;
+  @media(max-width:767) {
+    padding: 30px 15px;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slider {
+  // background: url('../../images/hero-bg.jpg');
+  background-color: blue;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-position: center 66%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  max-height: 800px;
+
+  &:before {
+    display: block;
+    content: "";
+    padding-top: 47%;
+  }
+}
