@@ -8,7 +8,7 @@ import { PortfolioService } from '../services/portfolio.service';
 })
 export class FeaturedWorkComponent implements OnInit {
 
-  posts: any[];
+  public posts: any[];
 
   constructor(private service: PortfolioService) { }
 

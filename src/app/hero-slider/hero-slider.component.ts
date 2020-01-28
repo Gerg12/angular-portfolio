@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from '../services/portfolio.service';
 import { ViewportScroller } from '@angular/common';
-import { IBasic } from './hero-interface';
+import { IBasic } from '../interface/interfaces';
 @Component({
   selector: 'hero-slider',
   templateUrl: './hero-slider.component.html',

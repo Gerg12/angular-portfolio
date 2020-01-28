@@ -7,7 +7,7 @@ import { PortfolioService } from '../services/portfolio.service';
   styleUrls: ['./cards.component.scss']
 })
 export class CardsComponent implements OnInit {
-  posts: any[];
+  public posts: any[];
 
   constructor(private service: PortfolioService) { }
 

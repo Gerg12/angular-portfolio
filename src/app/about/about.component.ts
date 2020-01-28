@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from '../services/portfolio.service';
+import { IBasic } from '../interface/interfaces';
 
 @Component({
   selector: 'about',
@@ -7,7 +8,7 @@ import { PortfolioService } from '../services/portfolio.service';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  basics: any;
+  public basics: IBasic;
 
   constructor(private service: PortfolioService) { }
 
