@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from '../services/portfolio.service';
 
 @Component({
   selector: 'hero-slider',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-slider.component.scss']
 })
 export class HeroSliderComponent implements OnInit {
+  basics: any[];
 
-  constructor() { }
+  constructor(private service: PortfolioService) { }
 
   ngOnInit() {
+    this.service.getAll()
+      .subscribe(basics => this.basics = basics.basics);
   }
 
 }
