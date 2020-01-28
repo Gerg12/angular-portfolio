@@ -6,7 +6,7 @@
     <div class="cards">
       <ng-container *ngFor="let post of posts" >
         <div *ngIf="!post.libraries.includes('Featured')"  class="card">
-          <a target="_blank" [attr.href]="post.displayName" class="card-inner">
+          <a target="_blank" [attr.href]="post.website" class="card-inner">
             <div class="card-image" [ngStyle]="{'background-image':'url('+ post.images[0].resolutions.desktop.url +')'}"></div>
             <!-- <div [style.background]="'url(' + post.images[0].resolutions.desktop.url + ') no-repeat'">test</div>
             <div class="card-image" [ngStyle]="{'background-image': post.name | json }"></div> -->

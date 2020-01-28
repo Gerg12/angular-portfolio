@@ -5,14 +5,14 @@
   </div>
   <div class="container">
     <ng-container *ngFor="let post of posts">
-      <div *ngIf="post.libraries.includes('Featured')" class="alternating-section-item">
+      <a *ngIf="post.libraries.includes('Featured')" [attr.href]="post.website" class="alternating-section-item" target="_blank">
         <div class="image-container" [ngStyle]="{'background-image':'url('+ post.images[0].resolutions.desktop.url +')'}">
         </div>
         <div class="text-container">
           <h3 class="header3">{{ post.displayName }}</h3>
           <p class="paragraph">{{ post.summary }}</p>
         </div>
-      </div>
+      </a>
     </ng-container>
   </div>
 </section>
