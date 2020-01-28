@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from '../services/portfolio.service';
 import { ViewportScroller } from '@angular/common';
-
+import { IBasic } from './hero-interface';
 @Component({
   selector: 'hero-slider',
   templateUrl: './hero-slider.component.html',
   styleUrls: ['./hero-slider.component.scss']
 })
 export class HeroSliderComponent implements OnInit {
-  basics: any[];
+  public basics: IBasic[];
 
   constructor(
     private service: PortfolioService,
