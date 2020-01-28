@@ -22,13 +22,13 @@ body {
 p {margin-bottom: 1.15rem;}
 
 h1, h2, h3, h4, h5 {
-  margin: 0 0 1.05rem;
   font-family: $font;
   font-weight: 400;
   line-height: 1.15;
+  margin-bottom: 10px;
 }
 
-h1 {
+.header1 {
   margin-top: 0;
   font-size: 4.209em;
   @media(max-width: 767px) {
@@ -36,18 +36,18 @@ h1 {
   }
 }
 
-h2 {
+.header2 {
   font-size: 3.157em;
   @media(max-width: 767px) {
     font-size: 2.5em;
   }
 }
 
-h3 {font-size: 2.369em;}
+.header3 {font-size: 2.369em;}
 
-h4 {font-size: 1.777em;}
+.header4 {font-size: 1.777em;}
 
-h5 {font-size: 1.333em;}
+.header5 {font-size: 1.333em;}
 
 small, .text_small {font-size: 0.75em;}
 
