@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { HeroSliderComponent } from './hero-slider/hero-slider.component';
 import { HttpModule } from '@angular/http';
 import { CardsComponent } from './cards/cards.component';
+import { FooterComponent } from './footer/footer.component';
+import { FeaturedWorkComponent } from './featured-work/featured-work.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroSliderComponent,
-    CardsComponent
+    CardsComponent,
+    FooterComponent,
+    FeaturedWorkComponent
   ],
   imports: [
     BrowserModule,

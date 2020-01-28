@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 400;
   line-height: 1.15;
   margin-bottom: 10px;
+  color: #646464;
 }
 
 .header1 {
@@ -62,4 +63,10 @@ small, .text_small {font-size: 0.75em;}
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }

@@ -1,21 +1,26 @@
-<section class="cards-section gutter">
+<section id="work" class="cards-section gutter">
+  <div class="container section-header">
+    <h2 class="header2">Other Work</h2>
+  </div>
   <div class="container">
     <div class="cards">
-      <div *ngFor="let post of posts" class="card">
-        <a target="_blank" [attr.href]="post.displayName" class="card-inner">
-          <div class="card-image" [ngStyle]="{'background-image':'url('+ post.images[0].resolutions.desktop.url +')'}"></div>
-          <!-- <div [style.background]="'url(' + post.images[0].resolutions.desktop.url + ') no-repeat'">test</div>
-          <div class="card-image" [ngStyle]="{'background-image': post.name | json }"></div> -->
-          <div class="card-text">
-            <h3 class="header4">
-              {{ post.displayName }}
-            </h3>
-            <p class="paragraph">
-              {{ post.summary }}
-            </p>
-          </div>
-        </a>
-      </div>
+      <ng-container *ngFor="let post of posts" >
+        <div *ngIf="!post.libraries.includes('Featured')"  class="card">
+          <a target="_blank" [attr.href]="post.displayName" class="card-inner">
+            <div class="card-image" [ngStyle]="{'background-image':'url('+ post.images[0].resolutions.desktop.url +')'}"></div>
+            <!-- <div [style.background]="'url(' + post.images[0].resolutions.desktop.url + ') no-repeat'">test</div>
+            <div class="card-image" [ngStyle]="{'background-image': post.name | json }"></div> -->
+            <div class="card-text">
+              <h3 class="header4">
+                {{ post.displayName }}
+              </h3>
+              <p class="paragraph">
+                {{ post.summary }}
+              </p>
+            </div>
+          </a>
+        </div>
+      </ng-container>
     </div>
   </div>
 </section>

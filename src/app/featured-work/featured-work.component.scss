@@ -1,0 +1,46 @@
+//Alternating Section Styles
+.alternating-section {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .alternating-section-item {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+
+    & + .alternating-section-item:nth-child(even) {
+      .image-container {
+        order: 2;
+      }
+      .text-container {
+        padding-left: 0;
+        @media(min-width: 768px) {
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+.image-container {
+  background-position: center 66%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #e3e3e3;
+  width:50%;
+  &:before {
+    display: block;
+    content: "";
+    padding-top: 47%;
+  }
+}
+
+.text-container {
+  width: 50%;
+  @media(min-width: 768px) {
+    padding-left: 30px;
+  }
+  padding-left: 15px;
+}

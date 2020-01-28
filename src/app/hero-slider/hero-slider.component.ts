@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from '../services/portfolio.service';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'hero-slider',
@@ -9,11 +10,19 @@ import { PortfolioService } from '../services/portfolio.service';
 export class HeroSliderComponent implements OnInit {
   basics: any[];
 
-  constructor(private service: PortfolioService) { }
+  constructor(
+    private service: PortfolioService,
+    private viewportScroller: ViewportScroller
+    ) { }
 
   ngOnInit() {
     this.service.getAll()
       .subscribe(basics => this.basics = basics.basics);
+  }
+
+
+  public onClick(elementId: string): void {
+    this.viewportScroller.scrollToAnchor(elementId);
   }
 
 }
