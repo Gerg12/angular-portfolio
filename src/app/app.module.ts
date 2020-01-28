@@ -8,6 +8,7 @@ import { HttpModule } from '@angular/http';
 import { CardsComponent } from './cards/cards.component';
 import { FooterComponent } from './footer/footer.component';
 import { FeaturedWorkComponent } from './featured-work/featured-work.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FeaturedWorkComponent } from './featured-work/featured-work.component';
     HeroSliderComponent,
     CardsComponent,
     FooterComponent,
-    FeaturedWorkComponent
+    FeaturedWorkComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

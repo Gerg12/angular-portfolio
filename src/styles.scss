@@ -6,6 +6,7 @@ $font: 'Roboto', sans-serif;
 
 html {
   font-size: 100%;//16px
+  scroll-behavior: smooth;
   @media(max-width: 767px) {
     font-size: 75%;//12px
   }
@@ -20,6 +21,10 @@ body {
 }
 
 p {margin-bottom: 1.15rem;}
+
+a {
+  cursor: pointer;
+}
 
 h1, h2, h3, h4, h5 {
   font-family: $font;
@@ -39,6 +44,7 @@ h1, h2, h3, h4, h5 {
 
 .header2 {
   font-size: 3.157em;
+  margin-bottom: 15px;
   @media(max-width: 767px) {
     font-size: 2.5em;
   }
@@ -69,4 +75,14 @@ small, .text_small {font-size: 0.75em;}
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #133046;
+}
+
+.info-box-item {
+  text-align: center;
 }
