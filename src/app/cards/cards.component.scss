@@ -3,6 +3,12 @@
   margin-bottom: 0;
 }
 
+.cards-section {
+  @media(max-width: 767px) {
+    padding-top: 22px;
+  }
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -10,6 +16,9 @@
   margin: -15px;
   .container {
     // border: 1px solid red;
+  }
+  @media(max-width: 767px) {
+    padding-bottom: 30px;
   }
 }
 

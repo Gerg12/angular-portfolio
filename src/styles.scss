@@ -86,6 +86,9 @@ small, .text_small {font-size: 0.75em;}
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  @media(max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
 
 hr {
