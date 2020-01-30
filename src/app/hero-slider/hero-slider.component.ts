@@ -8,7 +8,7 @@ import { IBasic } from '../interface/interfaces';
   styleUrls: ['./hero-slider.component.scss']
 })
 export class HeroSliderComponent implements OnInit {
-  public basics: IBasic[];
+  public basics: IBasic;
 
   constructor(
     private service: PortfolioService,
