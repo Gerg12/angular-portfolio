@@ -6,7 +6,7 @@
   <div class="container">
     <ng-container *ngFor="let post of posts">
       <a *ngIf="post.libraries.includes('Featured')" [attr.href]="post.website" class="alternating-section-item" target="_blank">
-        <div class="image-container" [ngStyle]="{'background-image':'url('+ post.images[0].resolutions.desktop.url +')'}">
+        <div class="image-container box-shadow" [ngStyle]="{'background-image':'url('+ post.images[0].resolutions.desktop.url +')'}">
         </div>
         <div class="text-container">
           <h3 class="header3">{{ post.displayName }}</h3>
